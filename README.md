@@ -2,7 +2,7 @@
 # ViewBager
 ###  RxJava wrapper for Android location.
 
-![alt text](https://github.com/ShabanKamell/RxLocation/blob/master/blob/master/raw/mobile-location.png "Sample App")
+![alt text](https://github.com/ShabanKamell/ViewBager/blob/master/blob/master/raw/screenshot.png "Sample App")
 
 # Features
 
