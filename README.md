@@ -15,15 +15,15 @@
 
 ```groovy
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+	repositories {
+	...
+	maven { url 'https://jitpack.io' }
 	}
+}
 
-	dependencies {
-	        implementation 'com.github.ShabanKamell:ViewBadger:1.1.0'
-	}
+dependencies {
+	implementation 'com.github.ShabanKamell:ViewBadger:1.1.0'
+}
 ```
 
 ### See 'app' module for the full code.
