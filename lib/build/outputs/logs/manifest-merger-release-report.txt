@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml:1:1-42
+INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml:1:1-42
+INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml:1:1-42
+INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml:1:1-42
+INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml:1:1-42
+INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml:1:1-42
+INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml:1:1-42
+	package
+		ADDED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml:1:11-39
+		INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml
+		INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml
+		ADDED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml:1:1-42
+		INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml:1:1-42
+	android:versionCode
+		INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml
+		ADDED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml:1:1-42
+		INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml
+uses-sdk
+INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml
+INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml
+INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml
+INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml
+		ADDED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml
+		INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml
+		ADDED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml
+		INJECTED from /media/sha/Soft/android/projects/lib/ViewBadger/lib/src/main/AndroidManifest.xml
