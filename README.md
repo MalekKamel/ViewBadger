@@ -2,7 +2,7 @@
 # ViewBager
 ###  RxJava wrapper for Android location.
 
-![alt text](https://github.com/ShabanKamell/ViewBager/blob/master/blob/master/raw/screenshot.png "Sample App")
+![alt text](https://github.com/ShabanKamell/ViewBadger/blob/master/blob/master/raw/screenshot.png"Sample App")
 
 # Features
 
