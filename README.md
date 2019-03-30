@@ -66,6 +66,11 @@ BadgeView badge = new ViewBadger().setupWithView(
         badge.setOnClickListener(v -> viewPager.setCurrentItem(index));
         badge.show(true);
 ```
+## Credit
+[jgilfelt/android-viewbadger](https://github.com/jgilfelt/android-viewbadger)
+
+
+
 ### See 'app' module for the full code.
 
 # License
