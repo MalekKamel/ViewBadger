@@ -1,14 +1,14 @@
 
 # ViewBager
-###  RxJava wrapper for Android location.
+###  Add `BADGE` to any Android view at runtime.
 
 <img src="https://github.com/ShabanKamell/ViewBadger/blob/master/blob/master/raw/screenshot.png" height="500">
 
 # Features
 
- - [ ] Easy-to-use APIs
- - [ ] Handle runtime.
- - [ ] Enable GPS.
+ - [ ] Optimized badge for TabLayout
+ - [ ] Optimized badge for BottomNavigationView.
+ - [ ] Add badge to any view.
 
 # Installation
 [![](https://jitpack.io/v/ShabanKamell/ViewBadger.svg)](https://jitpack.io/#ShabanKamell/ViewBadger)
