@@ -25,7 +25,45 @@ dependencies {
 	implementation 'com.github.ShabanKamell:ViewBadger:1.1.0'
 }
 ```
+## Usage
 
+#### BottomNavigationView
+```java
+BadgeView badge = new ViewBadger().setupWithViewBottomNavigation(
+                bottomNavigationView,
+                1,
+                this
+        );
+
+        badge.setText("1111");
+        badge.show(true);
+```
+
+#### TabLayout
+```java
+BadgeView badge = new ViewBadger().setupWithTabLayout(
+                tabLayout,
+                index,
+                TabLayoutMode.WITH_TITLE_AND_ICON,
+                getContext()
+        );
+
+        badge.setText("111");
+        badge.setOnClickListener(v -> viewPager.setCurrentItem(index));
+        badge.show(true);
+```
+
+#### Any View
+```java
+BadgeView badge = new ViewBadger().setupWithView(
+                getView().findViewById(R.id.iv),
+                getContext()
+        );
+
+        badge.setText("111");
+        badge.setOnClickListener(v -> viewPager.setCurrentItem(index));
+        badge.show(true);
+```
 ### See 'app' module for the full code.
 
 # License
