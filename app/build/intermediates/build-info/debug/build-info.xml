@@ -5,8 +5,9 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
+    ir-eligibility="METHOD_DELETED"
     plugin-version="3.4.0-rc02"
-    timestamp="1553903780963"
+    timestamp="1553944770452"
     token="-5036197377466957934"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -18,13 +19,16 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="20" />
     <task
         name="verifier"
-        duration="0" />
+        duration="18" />
 
     <artifact
         location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        type="SPLIT" />
+    <artifact
+        location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
         type="SPLIT" />
 
     <build
@@ -74,22 +78,25 @@
     <build
         build-mode="COLD"
         ir-eligibility="R_CLASS_CHANGE"
-        timestamp="1553888287936"
+        timestamp="1553944472692"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
             location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
             location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
             location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
@@ -97,28 +104,14 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1553903626783"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1553903746760"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1553903780963"
+        ir-eligibility="METHOD_DELETED"
+        timestamp="1553944770452"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
+        <artifact
+            location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
     </build>
 

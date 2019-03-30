@@ -1,6 +1,7 @@
 package com.sha.viewbadger;
 
 import android.content.Context;
+import android.view.View;
 import android.view.ViewGroup;
 
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
@@ -36,8 +37,6 @@ public class ViewBadger {
             int targetTabIndex,
             Context context
     ){
-        if (!(target.getParent() instanceof ViewGroup))
-            throw new IllegalArgumentException("the parent of the target: " + target + " must be a ViewGroup");
 
         BottomNavigationMenuView menuView = (BottomNavigationMenuView) target.getChildAt(0);
         BottomNavigationItemView menuItemView = (BottomNavigationItemView) menuView.getChildAt(targetTabIndex);
@@ -47,6 +46,22 @@ public class ViewBadger {
                 .setContext(context)
                 .setTarget(menuItemView)
                 .setTargetParent(menuItemView);
+
+        return  new BadgeView(params);
+    }
+
+    public BadgeView setupWithView(
+            View view,
+            Context context
+    ){
+        if (!(view.getParent() instanceof ViewGroup))
+            throw new IllegalArgumentException("the parent of the target: " + view + " must be a ViewGroup");
+
+        BadgeParams params = new BadgeParams()
+                .setTargetType(BadgeParams.TargetType.VIEW)
+                .setContext(context)
+                .setTarget(view)
+                .setTargetParent((ViewGroup) view.getParent());
 
         return  new BadgeView(params);
     }

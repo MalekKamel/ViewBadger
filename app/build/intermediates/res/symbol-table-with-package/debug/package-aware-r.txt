@@ -942,6 +942,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable bg_person_placeholder
 drawable btn_background
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
@@ -956,6 +957,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_notifications
+drawable ic_person
 drawable ic_profile
 drawable ic_search
 drawable ic_settings_white_24dp
@@ -1066,6 +1068,7 @@ id image
 id info
 id italic
 id item_touch_helper_previous_elevation
+id iv
 id labeled
 id largeLabel
 id left

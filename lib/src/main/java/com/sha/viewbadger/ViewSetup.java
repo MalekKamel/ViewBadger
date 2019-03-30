@@ -1,8 +1,6 @@
 package com.sha.viewbadger;
 
-import android.view.Gravity;
-import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.FrameLayout;
 
 class ViewSetup {
 
@@ -15,25 +13,17 @@ class ViewSetup {
     }
 
     void setup() {
-        LinearLayout container = container();
-        ViewGroup.LayoutParams lp = params.target.getLayoutParams();
+        FrameLayout container = new FrameLayout(params.context);
 
-        int index = params.targetParent.indexOfChild(params.target);
+        int indexOfTarget = params.targetParent.indexOfChild(params.target);
 
         params.targetParent.removeView(params.target);
-        params.targetParent.addView(container, index, lp);
+        params.targetParent.addView(container, indexOfTarget, params.target.getLayoutParams());
 
         container.addView(params.target);
-
         container.addView(view);
 
         params.targetParent.invalidate();
-    }
-
-    private LinearLayout container() {
-        LinearLayout container = new LinearLayout(params.context);
-        container.setGravity(Gravity.CENTER_VERTICAL);
-        return container;
     }
 
 }

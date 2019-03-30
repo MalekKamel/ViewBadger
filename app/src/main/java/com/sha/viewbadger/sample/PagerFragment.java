@@ -56,11 +56,24 @@ public class PagerFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        setupBadge();
         setupUi();
+        setupBadgeWithView();
+        setupBadgeWithTabLayout();
     }
 
-    private void setupBadge() {
+    private void setupBadgeWithView() {
+        BadgeView badge = new ViewBadger().setupWithView(
+                getView().findViewById(R.id.iv),
+                getContext()
+        );
+
+        badge.setText("111");
+        badge.setOnClickListener(v -> viewPager.setCurrentItem(index));
+        badge.show(true);
+
+    }
+
+    private void setupBadgeWithTabLayout() {
         if (badge != null) return;
 
         badge = new ViewBadger().setupWithTabLayout(
@@ -72,7 +85,6 @@ public class PagerFragment extends Fragment {
 
         badge.setText("111");
         badge.setOnClickListener(v -> viewPager.setCurrentItem(index));
-        int count = badge.getLineCount();
         badge.show(true);
     }
 

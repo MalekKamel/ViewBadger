@@ -296,6 +296,10 @@
         "source": "/home/sha/.gradle/caches/transforms-2/files-2.1/ddff181807c56e0c13b6ba71a86fa73d/res/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_person.png.flat",
+        "source": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_person.png"
+    },
+    {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/anim_abc_popup_enter.xml.flat",
         "source": "/home/sha/.gradle/caches/transforms-2/files-2.1/ddff181807c56e0c13b6ba71a86fa73d/res/anim/abc_popup_enter.xml"
     },
@@ -384,12 +388,12 @@
         "source": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_profile.png"
     },
     {
-        "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_notifications.png.flat",
-        "source": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_notifications.png"
-    },
-    {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/color_mtrl_tabs_legacy_text_color_selector.xml.flat",
         "source": "/home/sha/.gradle/caches/transforms-2/files-2.1/97bb0c805012e48187bc1c4da5cde8e5/res/color/mtrl_tabs_legacy_text_color_selector.xml"
+    },
+    {
+        "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_notifications.png.flat",
+        "source": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_notifications.png"
     },
     {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/layout-v26_abc_screen_toolbar.xml.flat",
@@ -406,6 +410,10 @@
     {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/color_mtrl_tabs_icon_color_selector_colored.xml.flat",
         "source": "/home/sha/.gradle/caches/transforms-2/files-2.1/97bb0c805012e48187bc1c4da5cde8e5/res/color/mtrl_tabs_icon_color_selector_colored.xml"
+    },
+    {
+        "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_person.png.flat",
+        "source": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/generated/res/pngs/debug/drawable-ldpi/ic_person.png"
     },
     {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -650,6 +658,10 @@
     {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/layout_design_bottom_navigation_item.xml.flat",
         "source": "/home/sha/.gradle/caches/transforms-2/files-2.1/97bb0c805012e48187bc1c4da5cde8e5/res/layout/design_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_person.png.flat",
+        "source": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/generated/res/pngs/debug/drawable-hdpi/ic_person.png"
     },
     {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -1236,6 +1248,10 @@
         "source": "/home/sha/.gradle/caches/transforms-2/files-2.1/ddff181807c56e0c13b6ba71a86fa73d/res/drawable/abc_list_divider_material.xml"
     },
     {
+        "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_person.png.flat",
+        "source": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_person.png"
+    },
+    {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/anim_design_snackbar_out.xml.flat",
         "source": "/home/sha/.gradle/caches/transforms-2/files-2.1/97bb0c805012e48187bc1c4da5cde8e5/res/anim/design_snackbar_out.xml"
     },
@@ -1350,6 +1366,10 @@
     {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_item_layout.xml.flat",
         "source": "/home/sha/.gradle/caches/transforms-2/files-2.1/ddff181807c56e0c13b6ba71a86fa73d/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_person.xml.flat",
+        "source": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_person.xml"
     },
     {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/layout_design_navigation_menu_item.xml.flat",
@@ -1602,6 +1622,10 @@
     {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/layout_abc_cascading_menu_item_layout.xml.flat",
         "source": "/home/sha/.gradle/caches/transforms-2/files-2.1/ddff181807c56e0c13b6ba71a86fa73d/res/layout/abc_cascading_menu_item_layout.xml"
+    },
+    {
+        "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_person.png.flat",
+        "source": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_person.png"
     },
     {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/layout_design_text_input_password_icon.xml.flat",
@@ -1960,6 +1984,10 @@
         "source": "/home/sha/.gradle/caches/transforms-2/files-2.1/97bb0c805012e48187bc1c4da5cde8e5/res/color/design_tint_password_toggle.xml"
     },
     {
+        "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable_bg_person_placeholder.xml.flat",
+        "source": "/media/sha/Soft/android/projects/lib/ViewBadger/app/src/main/res/drawable/bg_person_placeholder.xml"
+    },
+    {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/interpolator_mtrl_linear_out_slow_in.xml.flat",
         "source": "/home/sha/.gradle/caches/transforms-2/files-2.1/97bb0c805012e48187bc1c4da5cde8e5/res/interpolator/mtrl_linear_out_slow_in.xml"
     },
@@ -2054,6 +2082,10 @@
     {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "/home/sha/.gradle/caches/transforms-2/files-2.1/ddff181807c56e0c13b6ba71a86fa73d/res/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_person.png.flat",
+        "source": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/generated/res/pngs/debug/drawable-mdpi/ic_person.png"
     },
     {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
