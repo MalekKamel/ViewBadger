@@ -1,4 +1,6 @@
 
+[![](https://jitpack.io/v/ShabanKamell/ViewBadger.svg)](https://jitpack.io/#ShabanKamell/ViewBadger)
+
 # ViewBager
 ###  Add `BADGE` to any Android view at runtime.
 
