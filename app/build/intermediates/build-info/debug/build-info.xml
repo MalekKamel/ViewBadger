@@ -5,9 +5,9 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="METHOD_DELETED"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.4.0-rc02"
-    timestamp="1553944770452"
+    timestamp="1553945569991"
     token="-5036197377466957934"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -19,10 +19,10 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="20" />
+        duration="2" />
     <task
         name="verifier"
-        duration="18" />
+        duration="1" />
 
     <artifact
         location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
@@ -104,8 +104,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="METHOD_DELETED"
-        timestamp="1553944770452"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1553945569991"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
