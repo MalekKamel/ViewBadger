@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_faq);
     }
 
-
     private void setupBadgeWithBottomNavigation() {
         BadgeView badge = new ViewBadger().setupWithViewBottomNavigation(
                 bottomNavigationView,

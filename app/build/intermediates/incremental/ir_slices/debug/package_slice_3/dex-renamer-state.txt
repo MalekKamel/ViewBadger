@@ -1,4 +1,4 @@
-#Sat Mar 30 13:32:59 EET 2019
+#Mon Apr 01 18:42:38 EET 2019
 base.0=/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/transforms/dexMerger/debug/3
 path.0=classes.dex
 renamed.0=classes.dex

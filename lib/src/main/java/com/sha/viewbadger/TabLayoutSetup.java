@@ -50,12 +50,12 @@ class TabLayoutSetup {
 
         switch (params.tabLayoutMode) {
             case WITH_TITLE:
-                tab.setIcon(null);
+//                tab.setIcon(null);
                 withTitle(tab);
                 break;
 
             case WITH_ICON:
-                tab.setText(null);
+//                tab.setText(null);
                 withIcon(tab);
                 break;
 

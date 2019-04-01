@@ -70,7 +70,6 @@ public class PagerFragment extends Fragment {
         badge.setText("111");
         badge.setOnClickListener(v -> viewPager.setCurrentItem(index));
         badge.show(true);
-
     }
 
     private void setupBadgeWithTabLayout() {
@@ -79,7 +78,7 @@ public class PagerFragment extends Fragment {
         badge = new ViewBadger().setupWithTabLayout(
                 tabLayout,
                 index,
-                TabLayoutMode.WITH_TITLE_AND_ICON,
+                TabLayoutMode.WITH_ICON,
                 getContext()
         );
 
