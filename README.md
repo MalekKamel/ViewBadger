@@ -1,93 +1,75 @@
 
-# RxLocation
-###  RxJava wrapper for Android location.
+[![](https://jitpack.io/v/ShabanKamell/ViewBadger.svg)](https://jitpack.io/#ShabanKamell/ViewBadger)
 
-![alt text](https://github.com/ShabanKamell/RxLocation/blob/master/blob/master/raw/mobile-location.png "Sample App")
+# ViewBadger
+###  Add `BADGE` to any Android view at runtime.
+
+<img src="https://github.com/ShabanKamell/ViewBadger/blob/master/blob/master/raw/screenshot.png" height="500">
 
 # Features
 
- - [ ] Easy-to-use APIs
- - [ ] Handle runtime.
- - [ ] Enable GPS.
+ - [ ] Optimized badge for TabLayout
+ - [ ] Optimized badge for BottomNavigationView.
+ - [ ] Add badge to any view.
 
 # Installation
-[ ![Download](https://api.bintray.com/packages/shabankamel/android/rxcurrentlocation/images/download.svg) ](https://bintray.com/shabankamel/android/rxcurrentlocation/_latestVersion)
+[![](https://jitpack.io/v/ShabanKamell/ViewBadger.svg)](https://jitpack.io/#ShabanKamell/ViewBadger)
+
 ```groovy
+allprojects {
+	repositories {
+	...
+	maven { url 'https://jitpack.io' }
+	}
+}
+
 dependencies {
-    implementation 'com.sha.kamel:rx-location:1.8.1@aar'
-}
-
-repositories {
-maven {
-url "https://dl.bintray.com/shabankamel/android"
-}
-...
+	implementation 'com.github.ShabanKamell:ViewBadger:1.1.0'
 }
 ```
+## Usage
 
-# Usage
+#### BottomNavigationView
 ```java
- new RxLocation()
-                .onFailure(failMessage -> tv_location.setText(failMessage.getMessage()))
-                .retrieveCurrentLocation(MainActivity.this)
-                .subscribe(location -> {
-                            String msg = "lat = " +
-                                    location.getLatitude() +
-                                    ", lng = " +
-                                    location.getLongitude();
-                            tv_location.setText(msg);
-                        }
-                );
+BadgeView badge = new ViewBadger().setupWithViewBottomNavigation(
+                bottomNavigationView,
+                1,
+                this
+        );
+
+        badge.setText("1111");
+        badge.show(true);
 ```
-## listenForUpdates
+
+#### TabLayout
 ```java
-     rxLocation.listenForUpdates(MainActivity.this)...
+BadgeView badge = new ViewBadger().setupWithTabLayout(
+                tabLayout,
+                index,
+                TabLayoutMode.WITH_TITLE_AND_ICON,
+                getContext()
+        );
+
+        badge.setText("111");
+        badge.setOnClickListener(v -> viewPager.setCurrentItem(index));
+        badge.show(true);
 ```
-### Update Quality 
-You can set update quality by passing `UpdateQuality` object to the overloaded `listenForUpdates` function
+
+#### Any View
 ```java
-rxLocation.listenForUpdates(  
-        MainActivity.this,  
-        new UpdateQuality()  
-                .priority(LocationRequest.PRIORITY_HIGH_ACCURACY)  
-                .interval(10 * 1000)  
-                .fastestUpdateInterval(2 * 1000))
+BadgeView badge = new ViewBadger().setupWithView(
+                getView().findViewById(R.id.iv),
+                getContext()
+        );
+
+        badge.setText("111");
+        badge.setOnClickListener(v -> viewPager.setCurrentItem(index));
+        badge.show(true);
 ```
-## Note
-Call `RxLocation.removeLocationUpdates()` to stop location updates when you don't need updates anymore.
+## Credit
+[jgilfelt/android-viewbadger](https://github.com/jgilfelt/android-viewbadger)
 
-### Update Quality Defaults
- - [ ] priority default value = 0.
- - [ ] interval default value =  LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY.
- - [ ] fastestUpdateInterval default value = 2 * 1000.
 
-# Errors
-if and error occureed it will be passed to `onFailureListener(OnFailure)`
-### Types of expected errors:
-
- - [ ] GPS_DISABLED
- - [ ] NETWORK_DISABLED
- - [ ] UNKNOWN
-
-#### Example
-```java
-new RxLocation().onFailureListener(failMessage -> {  
-      // you can show error directly
-      tv_location.setText(failMessage.getMessage()); 
-      // or you can handle each error separately
-      switch (failMessage.getError()){  
-        case GPS_DISABLED:  
-            // handle error  
-           break;  
-        case NETWORK_DISABLED:  
-            // handle error  
-           break;  
-        case UNKNOWN:  
-             // handle error  
-           break;  
-  } 
-})
-```
 
 ### See 'app' module for the full code.
 
