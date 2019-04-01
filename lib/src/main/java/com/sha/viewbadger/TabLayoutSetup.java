@@ -188,7 +188,6 @@ class TabLayoutSetup {
         tv.setText(tab.getText());
         tv.setTextColor(params.tabLayout.getTabTextColors());
         tv.setGravity(Gravity.CENTER_HORIZONTAL);
-        tab.setText(null);
         tv.setSelected(tab.isSelected());
         params.tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
