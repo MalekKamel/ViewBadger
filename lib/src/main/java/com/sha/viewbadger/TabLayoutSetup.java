@@ -34,9 +34,8 @@ class TabLayoutSetup {
                 break;
         }
 
-        ViewGroup.LayoutParams p = new ViewGroup.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                PixelUtil.from(height, params.context));
+        ViewGroup.LayoutParams p = params.tabLayout.getLayoutParams();
+        p.height = PixelUtil.from(height, params.context);
         params.tabLayout.setLayoutParams(p);
     }
 
