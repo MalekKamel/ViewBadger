@@ -34,10 +34,9 @@ class TabLayoutSetup {
                 break;
         }
 
-        LinearLayout.LayoutParams p = new LinearLayout.LayoutParams(
+        ViewGroup.LayoutParams p = new ViewGroup.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 PixelUtil.from(height, params.context));
-        p.gravity = Gravity.CENTER_VERTICAL;
         params.tabLayout.setLayoutParams(p);
     }
 
