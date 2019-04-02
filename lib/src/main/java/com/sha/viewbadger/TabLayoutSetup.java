@@ -46,7 +46,6 @@ class TabLayoutSetup {
 
         if (tab == null) return;
 
-
         switch (params.tabLayoutMode) {
             case WITH_TITLE:
                 withTitle(tab);
@@ -232,3 +231,4 @@ class TabLayoutSetup {
         return customView;
     }
 }
+//
