@@ -13,7 +13,8 @@ class BottomNavSetup {
     }
 
     void setup() {
-        params.targetParent.addView(view,
+        params.targetParent.addView(
+                view,
                 new ViewGroup.LayoutParams(
                         ViewGroup.LayoutParams.MATCH_PARENT,
                         ViewGroup.LayoutParams.MATCH_PARENT)

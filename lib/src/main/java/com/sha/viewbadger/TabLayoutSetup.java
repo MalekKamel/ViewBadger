@@ -137,9 +137,7 @@ class TabLayoutSetup {
                 ViewGroup.LayoutParams.MATCH_PARENT
                 );
         p.gravity = Gravity.FILL;
-        iconAndTitleContainer.setLayoutParams(
-                p
-        );
+        iconAndTitleContainer.setLayoutParams(p);
 
         tab.setCustomView(customView);
 
