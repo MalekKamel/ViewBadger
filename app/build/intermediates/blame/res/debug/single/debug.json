@@ -204,6 +204,10 @@
         "source": "/home/sha/.gradle/caches/transforms-2/files-2.1/ddff181807c56e0c13b6ba71a86fa73d/res/drawable-xhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/layout_bottomnav_badge.xml.flat",
+        "source": "/media/sha/Soft/android/projects/lib/ViewBadger/lib/build/intermediates/packaged_res/debug/layout/bottomnav_badge.xml"
+    },
+    {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "/home/sha/.gradle/caches/transforms-2/files-2.1/ddff181807c56e0c13b6ba71a86fa73d/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -402,6 +406,10 @@
     {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_design_ic_visibility.xml.flat",
         "source": "/home/sha/.gradle/caches/transforms-2/files-2.1/97bb0c805012e48187bc1c4da5cde8e5/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/layout_tablayout_badge.xml.flat",
+        "source": "/media/sha/Soft/android/projects/lib/ViewBadger/lib/build/intermediates/packaged_res/debug/layout/tablayout_badge.xml"
     },
     {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_profile.png.flat",
@@ -1786,6 +1794,10 @@
     {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/anim_abc_tooltip_exit.xml.flat",
         "source": "/home/sha/.gradle/caches/transforms-2/files-2.1/ddff181807c56e0c13b6ba71a86fa73d/res/anim/abc_tooltip_exit.xml"
+    },
+    {
+        "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/layout_bottom_nav.xml.flat",
+        "source": "/media/sha/Soft/android/projects/lib/ViewBadger/lib/build/intermediates/packaged_res/debug/layout/bottom_nav.xml"
     },
     {
         "merged": "/media/sha/Soft/android/projects/lib/ViewBadger/app/build/intermediates/res/merged/debug/drawable_abc_ic_voice_search_api_material.xml.flat",

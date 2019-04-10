@@ -1,7 +1,9 @@
 package com.sha.viewbadger;
 
 import android.view.Gravity;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -98,27 +100,18 @@ class TabLayoutSetup {
     }
 
     private void withIcon(TabLayout.Tab tab) {
-        LinearLayout customView = createCustomView();
 
-        tab.setCustomView(customView);
+        View tabView = LayoutInflaterUtil.inflate(R.layout.tablayout_badge, params.context);
+        FrameLayout wBadge = tabView.findViewById(R.id.w_badge);
+        ImageView ivTabIcon = tabView.findViewById(R.id.iv_tabIcon);
+        ivTabIcon.setImageDrawable(tab.getIcon());
 
-        customView.setGravity(Gravity.CENTER);
+        tab.setCustomView(tabView);
 
-        customView.setOrientation(LinearLayout.HORIZONTAL);
-
-        customView.addView(createTabIcon(tab),
-                0,
-                new LinearLayout.LayoutParams(
-                        PixelUtil.from(24, params.context),
-                        PixelUtil.from(24, params.context),
-                        1
-                )
-        );
-        customView.addView(view,
-                1,
-                new LinearLayout.LayoutParams(
+        wBadge.addView(view,
+                new FrameLayout.LayoutParams(
                         ViewGroup.LayoutParams.MATCH_PARENT,
-                        ViewGroup.LayoutParams.WRAP_CONTENT,
+                        ViewGroup.LayoutParams.MATCH_PARENT,
                         1
                 )
         );

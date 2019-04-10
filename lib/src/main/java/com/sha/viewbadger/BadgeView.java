@@ -33,7 +33,7 @@ public class BadgeView extends AppCompatTextView {
     private static final int DEFAULT_MARGIN_DIP = 5;
     private static final int DEFAULT_LR_PADDING_DIP = 5;
     private static final Position DEFAULT_POSITION = Position.TOP_END;
-    private static final int DEFAULT_BADGE_COLOR = Color.BLUE;
+    private static final int DEFAULT_BADGE_COLOR = Color.RED;
     private static final int DEFAULT_TEXT_COLOR = Color.WHITE;
 
     private static Animation fadeIn = AnimUtil.fadeIn();
@@ -82,8 +82,7 @@ public class BadgeView extends AppCompatTextView {
         verticalMargin = horizontalMargin;
 
         setTypeface(Typeface.DEFAULT_BOLD);
-        int paddingPixels = dipToPixels(DEFAULT_LR_PADDING_DIP);
-        setPadding(paddingPixels, 0, paddingPixels, 0);
+        setPadding(0, 0, 0, 0);
         setTextColor(DEFAULT_TEXT_COLOR);
 
         if (params.target != null) {
@@ -217,6 +216,8 @@ public class BadgeView extends AppCompatTextView {
     }
 
     private void applyLayoutParams() {
+        if (params.targetType.equals(BadgeParams.TargetType.TAB_LAYOUT))
+            return;
 
         Pair<Integer, Margins> positionInfo = getPositionInfo();
 
@@ -243,13 +244,23 @@ public class BadgeView extends AppCompatTextView {
                     LayoutParams.WRAP_CONTENT
             );
 
-            flp.gravity = positionInfo.first;
-            flp.setMargins(
-                    positionInfo.second.start,
-                    positionInfo.second.top,
-                    positionInfo.second.end,
-                    positionInfo.second.bottom
-            );
+            switch (params.targetType){
+                case BOTTOM_NAV:
+                    flp.gravity = Gravity.CENTER | Gravity.TOP;
+                    flp.setMargins(
+                            0,
+                            0,
+                            dipToPixels(-15),
+                            0
+                    );
+                    break;
+
+                default:
+                    flp.gravity = positionInfo.first;
+
+                    break;
+            }
+
             setLayoutParams(flp);
         }
     }

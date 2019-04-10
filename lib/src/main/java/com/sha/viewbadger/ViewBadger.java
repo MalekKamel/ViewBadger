@@ -44,8 +44,12 @@ public class ViewBadger {
         BadgeParams params = new BadgeParams()
                 .setTargetType(BadgeParams.TargetType.BOTTOM_NAV)
                 .setContext(context)
-                .setTarget(menuItemView)
-                .setTargetParent(menuItemView);
+                .setTarget(menuView)
+                .setTargetParent(menuItemView)
+                .setBottomNavView(menuView)
+                .setBottomNavItemView(menuItemView)
+                .setTargetTabIndex(targetTabIndex)
+                .setBottomNav(target);
 
         return  new BadgeView(params);
     }

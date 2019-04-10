@@ -67,7 +67,7 @@ public class PagerFragment extends Fragment {
                 getContext()
         );
 
-        badge.setText("111");
+        badge.setText("33");
         badge.setOnClickListener(v -> viewPager.setCurrentItem(index));
         badge.show(true);
     }
@@ -82,7 +82,7 @@ public class PagerFragment extends Fragment {
                 getContext()
         );
 
-        badge.setText("111");
+        badge.setText("33");
         badge.setOnClickListener(v -> viewPager.setCurrentItem(index));
         badge.show(true);
     }

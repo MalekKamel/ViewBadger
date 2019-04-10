@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.material.bottomnavigation.BottomNavigationItemView;
+import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 
@@ -23,6 +25,9 @@ public class BadgeParams {
     public BottomNavigationView bottomNav;
     public ViewGroup targetParent;
     public TabLayoutMode tabLayoutMode;
+    public BottomNavigationMenuView bottomNavView;
+    public BottomNavigationItemView bottomNavItemView;
+
 
     public BadgeParams setContext(Context context) {
         this.context = context;
@@ -66,6 +71,16 @@ public class BadgeParams {
 
     public BadgeParams setTabLayoutMode(TabLayoutMode tabLayoutMode) {
         this.tabLayoutMode = tabLayoutMode;
+        return this;
+    }
+
+    public BadgeParams setBottomNavView(BottomNavigationMenuView bottomNavView) {
+        this.bottomNavView = bottomNavView;
+        return this;
+    }
+
+    public BadgeParams setBottomNavItemView(BottomNavigationItemView bottomNavItemView) {
+        this.bottomNavItemView = bottomNavItemView;
         return this;
     }
 }
