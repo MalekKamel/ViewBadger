@@ -24,7 +24,7 @@ allprojects {
 }
 
 dependencies {
-	implementation 'com.github.ShabanKamell:ViewBadger:1.4.1'
+	implementation 'com.github.ShabanKamell:ViewBadger:1.6.1'
 }
 ```
 ## Usage
