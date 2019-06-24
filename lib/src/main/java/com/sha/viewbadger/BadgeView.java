@@ -248,10 +248,10 @@ public class BadgeView extends AppCompatTextView {
                 case BOTTOM_NAV:
                     flp.gravity = Gravity.CENTER | Gravity.TOP;
                     flp.setMargins(
-                            0,
-                            0,
-                            dipToPixels(-15),
-                            0
+                            positionInfo.second.start,
+                            positionInfo.second.top,
+                            positionInfo.second.end,
+                            positionInfo.second.bottom
                     );
                     break;
 

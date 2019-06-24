@@ -8,3 +8,6 @@
 lib/build
 /captures
 .externalNativeBuild
+/.idea/caches/
+.idea/modules.xml
+
