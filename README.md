@@ -13,7 +13,7 @@
  - [ ] Add badge to any view.
 
 # Installation
-### Last Version[![](https://jitpack.io/v/ShabanKamell/ViewBadger.svg)](https://jitpack.io/#ShabanKamell/ViewBadger)
+### Last Version [![](https://jitpack.io/v/ShabanKamell/ViewBadger.svg)](https://jitpack.io/#ShabanKamell/ViewBadger)
 
 ```groovy
 allprojects {
@@ -24,7 +24,7 @@ allprojects {
 }
 
 dependencies {
-	implementation 'com.github.ShabanKamell:ViewBadger:last.version'
+	implementation 'com.github.ShabanKamell:ViewBadger:LAST.VERSION'
 }
 ```
 ## Usage
