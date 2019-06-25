@@ -88,13 +88,19 @@ public class ViewBadger {
         if (!(view.getParent() instanceof ViewGroup))
             throw new IllegalArgumentException("the parent of the target: " + view + " must be a ViewGroup");
 
+        BadgeTarget target = ViewSetup.target(view);
+
+        if (target == null)
+            throw new IllegalArgumentException("View must be wrapped with BadgeTarget");
+
         BadgeParams params = new BadgeParams()
                 .setTargetType(BadgeParams.TargetType.VIEW)
                 .setContext(context)
                 .setTarget(view)
                 .setTargetParent((ViewGroup) view.getParent())
                 .setViewRound(isViewRound)
-                .setRootViewId(rootViewId);
+                .setRootViewId(rootViewId)
+                .setBadgeTarget(target);
 
         return  new BadgeView(params);
     }

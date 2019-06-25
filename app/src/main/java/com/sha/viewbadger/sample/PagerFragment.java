@@ -63,32 +63,40 @@ public class PagerFragment extends Fragment {
                 R.id.ivRound,
                 true,
                 BadgeView.Position.TOP_START
-                );
+        );
         setupBadgeWithView(
                 R.id.ivSquare,
                 false,
                 BadgeView.Position.TOP_END
-                );
+        );
         setupBadgeWithView(
                 R.id.ivRoundLarge,
                 true,
                 BadgeView.Position.BOTTOM_START
-                );
+        );
         setupBadgeWithView(
                 R.id.ivSquareLarge,
                 false,
                 BadgeView.Position.BOTTOM_END
-                );
+        );
 
         setupBadgeWithView(
                 R.id.ivSquare2,
                 false,
                 BadgeView.Position.CENTER
-                );
+        );
+
         setupBadgeWithView(
                 R.id.ivSquareLarge2,
-                false, BadgeView.Position.CENTER_HORIZONTAL
-                );
+                false,
+                BadgeView.Position.CENTER_HORIZONTAL
+        );
+
+        setupBadgeWithView(
+                R.id.fab,
+                false,
+                BadgeView.Position.TOP_END
+        );
     }
 
     private void setupBadgeWithView(int view, boolean isRound, BadgeView.Position position) {

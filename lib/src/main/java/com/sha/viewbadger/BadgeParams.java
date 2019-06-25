@@ -31,6 +31,7 @@ public class BadgeParams {
     public boolean isViewRound;
     public BadgeView.Position position;
     public int rootViewId;
+    public BadgeTarget badgeTarget;
 
     public BadgeParams setContext(Context context) {
         this.context = context;
@@ -96,5 +97,11 @@ public class BadgeParams {
         this.rootViewId = rootViewId;
         return this;
     }
+
+    public BadgeParams setBadgeTarget(BadgeTarget badgeTarget) {
+        this.badgeTarget = badgeTarget;
+        return this;
+    }
+
 }
  

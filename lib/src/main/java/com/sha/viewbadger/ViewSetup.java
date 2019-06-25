@@ -1,18 +1,14 @@
 package com.sha.viewbadger;
 
-import android.graphics.Color;
+import android.os.Build;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-
-import androidx.core.view.ViewCompat;
 
 class ViewSetup {
 
     private BadgeView badge;
     private BadgeParams params;
     private static final float TRANSLATION = 30;
-    int containerId = ViewCompat.generateViewId();
 
     ViewSetup(BadgeView badge, BadgeParams params) {
         this.badge = badge;
@@ -20,24 +16,20 @@ class ViewSetup {
     }
 
     void setup() {
-        FrameLayout container = new FrameLayout(params.context);
-        container.setId(containerId);
-        container.setBackgroundColor(Color.parseColor("#242323"));
 
-        int indexOfTarget = params.targetParent.indexOfChild(params.target);
+        params.badgeTarget.addView(badge);
+        badge.bringToFront();
 
-        params.targetParent.removeView(params.target);
+        // set elevation to show the badge above FloatingActionButton
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            badge.setElevation(20);
+        }
 
-        params.targetParent.addView(container, indexOfTarget);
-
-        container.addView(params.target);
-        container.addView(badge);
-
-        params.targetParent.invalidate();
+        params.badgeTarget.bringChildToFront(badge);
 
         handleTranslation();
 
-        disableClip(container);
+        disableClip(params.badgeTarget);
     }
 
     private void handleTranslation() {
@@ -97,20 +89,6 @@ class ViewSetup {
     }
 
     private void disableClip(View view) {
-//        if (view.getParent() == null) {
-//            return;
-//        }
-//
-//        if (view instanceof ViewGroup) {
-//            ((ViewGroup) view).setClipChildren(false);
-//            return;
-//        }
-//
-//        if (view.getParent() instanceof View) {
-//            disableClip((View) view.getParent());
-//        }
-
-//        if (view.getId() == android.R.id.content) return;
 
         if (!(view.getParent() instanceof ViewGroup)) return;
 
@@ -122,6 +100,20 @@ class ViewSetup {
 
         if (parent.getParent() != null)
             disableClip(parent);
+    }
+
+    static BadgeTarget target(View view) {
+
+       if (view.getParent() == null) return null;
+
+       if (!(view.getParent() instanceof View)) return null;
+
+        View parent = (View) view.getParent();
+
+        if (parent instanceof BadgeTarget)
+            return (BadgeTarget) parent;
+
+        return target(parent);
     }
 
 }
