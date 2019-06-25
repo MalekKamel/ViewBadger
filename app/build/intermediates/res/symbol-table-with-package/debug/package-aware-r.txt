@@ -1066,7 +1066,12 @@ id image
 id info
 id italic
 id item_touch_helper_previous_elevation
-id iv
+id ivRound
+id ivRoundLarge
+id ivSquare
+id ivSquare2
+id ivSquareLarge
+id ivSquareLarge2
 id iv_tabIcon
 id labeled
 id largeLabel
@@ -1100,6 +1105,7 @@ id radio
 id right
 id right_icon
 id right_side
+id root
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type

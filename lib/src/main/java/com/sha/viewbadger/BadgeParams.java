@@ -16,6 +16,7 @@ public class BadgeParams {
         BOTTOM_NAV,
         VIEW
     }
+
     public TargetType targetType;
     public Context context;
     public View target;
@@ -27,7 +28,9 @@ public class BadgeParams {
     public TabLayoutMode tabLayoutMode;
     public BottomNavigationMenuView bottomNavView;
     public BottomNavigationItemView bottomNavItemView;
-
+    public boolean isViewRound;
+    public BadgeView.Position position;
+    public int rootViewId;
 
     public BadgeParams setContext(Context context) {
         this.context = context;
@@ -81,6 +84,16 @@ public class BadgeParams {
 
     public BadgeParams setBottomNavItemView(BottomNavigationItemView bottomNavItemView) {
         this.bottomNavItemView = bottomNavItemView;
+        return this;
+    }
+
+    public BadgeParams setViewRound(boolean viewRound) {
+        isViewRound = viewRound;
+        return this;
+    }
+
+    public BadgeParams setRootViewId(int rootViewId) {
+        this.rootViewId = rootViewId;
         return this;
     }
 }

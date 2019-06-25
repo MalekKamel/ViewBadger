@@ -57,18 +57,51 @@ public class PagerFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         setupUi();
-        setupBadgeWithView();
         setupBadgeWithTabLayout();
+
+        setupBadgeWithView(
+                R.id.ivRound,
+                true,
+                BadgeView.Position.TOP_START
+                );
+        setupBadgeWithView(
+                R.id.ivSquare,
+                false,
+                BadgeView.Position.TOP_END
+                );
+        setupBadgeWithView(
+                R.id.ivRoundLarge,
+                true,
+                BadgeView.Position.BOTTOM_START
+                );
+        setupBadgeWithView(
+                R.id.ivSquareLarge,
+                false,
+                BadgeView.Position.BOTTOM_END
+                );
+
+        setupBadgeWithView(
+                R.id.ivSquare2,
+                false,
+                BadgeView.Position.CENTER
+                );
+        setupBadgeWithView(
+                R.id.ivSquareLarge2,
+                false, BadgeView.Position.CENTER_HORIZONTAL
+                );
     }
 
-    private void setupBadgeWithView() {
+    private void setupBadgeWithView(int view, boolean isRound, BadgeView.Position position) {
         BadgeView badge = new ViewBadger().setupWithView(
-                getView().findViewById(R.id.iv),
+                getView().findViewById(view),
+                R.id.root,
+                isRound,
                 getContext()
         );
 
         badge.setText("33");
         badge.setOnClickListener(v -> viewPager.setCurrentItem(index));
+        badge.setPosition(position);
         badge.show(true);
     }
 

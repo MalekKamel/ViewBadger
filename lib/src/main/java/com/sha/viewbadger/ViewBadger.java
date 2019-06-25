@@ -11,6 +11,14 @@ import com.google.android.material.tabs.TabLayout;
 
 public class ViewBadger {
 
+    /**
+     *
+     * @param tabLayout
+     * @param targetTabIndex
+     * @param mode
+     * @param context
+     * @return
+     */
     public BadgeView setupWithTabLayout(
             TabLayout tabLayout,
             int targetTabIndex,
@@ -32,6 +40,13 @@ public class ViewBadger {
         return  new BadgeView(params);
     }
 
+    /**
+     *
+     * @param target
+     * @param targetTabIndex
+     * @param context
+     * @return
+     */
     public BadgeView setupWithViewBottomNavigation(
             BottomNavigationView target,
             int targetTabIndex,
@@ -54,8 +69,20 @@ public class ViewBadger {
         return  new BadgeView(params);
     }
 
+    /**
+     *
+     * @param view the target view that badge will be displayed on
+     * @param isViewRound this is used to optimize the location of the badge on
+     *                    the view
+     * @param rootViewId the top view id in the XML hierarchy, it's used to disable clipping
+     *                   children to allow showing badge outside the target view nounds
+     * @param context object
+     * @return badge
+     */
     public BadgeView setupWithView(
             View view,
+            int rootViewId,
+            boolean isViewRound,
             Context context
     ){
         if (!(view.getParent() instanceof ViewGroup))
@@ -65,7 +92,9 @@ public class ViewBadger {
                 .setTargetType(BadgeParams.TargetType.VIEW)
                 .setContext(context)
                 .setTarget(view)
-                .setTargetParent((ViewGroup) view.getParent());
+                .setTargetParent((ViewGroup) view.getParent())
+                .setViewRound(isViewRound)
+                .setRootViewId(rootViewId);
 
         return  new BadgeView(params);
     }

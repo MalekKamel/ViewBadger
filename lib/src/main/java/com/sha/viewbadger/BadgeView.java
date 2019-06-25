@@ -46,7 +46,7 @@ public class BadgeView extends AppCompatTextView {
     private boolean isShown;
     private boolean trimNumberAfter99 = true;
 
-    private Position position;
+    private Position position = DEFAULT_POSITION;
     private long actualNumber;
 
     public enum Position {
@@ -76,8 +76,6 @@ public class BadgeView extends AppCompatTextView {
 
         setTextSize(11);
 
-        // apply defaults
-        position = DEFAULT_POSITION;
         horizontalMargin = dipToPixels(DEFAULT_MARGIN_DIP);
         verticalMargin = horizontalMargin;
 
@@ -85,14 +83,10 @@ public class BadgeView extends AppCompatTextView {
         setPadding(0, 0, 0, 0);
         setTextColor(DEFAULT_TEXT_COLOR);
 
-        if (params.target != null) {
-            applyToTarget();
-        } else {
-            show();
-        }
     }
 
     private void applyToTarget() {
+        params.position = position;
 
         switch (params.targetType){
             case TAB_LAYOUT:
@@ -142,15 +136,16 @@ public class BadgeView extends AppCompatTextView {
     private void show(boolean animate, Animation anim) {
         isShown = true;
 
+        if (getParent() == null)
+            applyToTarget();
+
         applyBackground(getText());
 
         applyLayoutParams();
 
         this.setVisibility(View.VISIBLE);
 
-        if (animate) {
-            this.startAnimation(anim);
-        }
+        if (animate) startAnimation(anim);
     }
 
     public BadgeView setBadgeText(CharSequence text){
@@ -214,14 +209,13 @@ public class BadgeView extends AppCompatTextView {
 
         setBackground(gd);
     }
-
     private void applyLayoutParams() {
         if (params.targetType.equals(BadgeParams.TargetType.TAB_LAYOUT))
             return;
 
         Pair<Integer, Margins> positionInfo = getPositionInfo();
 
-        if (getParent() instanceof LinearLayout){
+        if (getParent() instanceof LinearLayout) {
             LinearLayout.LayoutParams llp = new LinearLayout.LayoutParams(
                     LayoutParams.WRAP_CONTENT,
                     LayoutParams.WRAP_CONTENT
@@ -238,13 +232,13 @@ public class BadgeView extends AppCompatTextView {
             return;
         }
 
-        if (getParent() instanceof FrameLayout){
+        if (getParent() instanceof FrameLayout) {
             FrameLayout.LayoutParams flp = new FrameLayout.LayoutParams(
                     LayoutParams.WRAP_CONTENT,
                     LayoutParams.WRAP_CONTENT
             );
 
-            switch (params.targetType){
+            switch (params.targetType) {
                 case BOTTOM_NAV:
                     flp.gravity = Gravity.CENTER | Gravity.TOP;
                     flp.setMargins(
@@ -257,7 +251,6 @@ public class BadgeView extends AppCompatTextView {
 
                 default:
                     flp.gravity = positionInfo.first;
-
                     break;
             }
 
