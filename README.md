@@ -61,18 +61,18 @@ BadgeView badge = new ViewBadger().setupWithTabLayout(
 
 ```xml
 <com.sha.viewbadger.BadgeTarget
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
-                    <ImageView
-                        android:id="@+id/ivSquareLarge"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/btn_background"
-                        />
+      <ImageView
+         android:id="@+id/ivSquareLarge"
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:layout_gravity="center"
+         android:background="@drawable/btn_background"
+         />
 
-                </com.sha.viewbadger.BadgeTarget>
+</com.sha.viewbadger.BadgeTarget>
 ```
 #### Show the badge
 
