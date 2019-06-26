@@ -29,7 +29,7 @@ dependencies {
 ```
 ## Usage
 
-#### BottomNavigationView
+### BottomNavigationView
 ```java
 BadgeView badge = new ViewBadger().setupWithViewBottomNavigation(
                 bottomNavigationView,
@@ -41,7 +41,7 @@ BadgeView badge = new ViewBadger().setupWithViewBottomNavigation(
         badge.show(true);
 ```
 
-#### TabLayout
+### TabLayout
 ```java
 BadgeView badge = new ViewBadger().setupWithTabLayout(
                 tabLayout,
@@ -55,7 +55,7 @@ BadgeView badge = new ViewBadger().setupWithTabLayout(
         badge.show(true);
 ```
 
-#### Any View
+### Any View
 
 #### Wrap the view with BadgeTarget
 
@@ -89,6 +89,7 @@ BadgeView badge = new ViewBadger().setupWithView(
         badge.setPosition(position);
         badge.show(true);
 ```
+
 ## Credit
 [jgilfelt/android-viewbadger](https://github.com/jgilfelt/android-viewbadger)
 
