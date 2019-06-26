@@ -56,14 +56,37 @@ BadgeView badge = new ViewBadger().setupWithTabLayout(
 ```
 
 #### Any View
+
+#### Wrap the view with BadgeTarget
+
+```xml
+<com.sha.viewbadger.BadgeTarget
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivSquareLarge"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_background"
+                        />
+
+                </com.sha.viewbadger.BadgeTarget>
+```
+#### Show the badge
+
 ```java
 BadgeView badge = new ViewBadger().setupWithView(
-                getView().findViewById(R.id.iv),
+                getView().findViewById(view),
+                R.id.root,
+                isRound,
                 getContext()
         );
 
-        badge.setText("111");
+        badge.setText("33");
         badge.setOnClickListener(v -> viewPager.setCurrentItem(index));
+        badge.setPosition(position);
         badge.show(true);
 ```
 ## Credit
